@@ -1,0 +1,38 @@
+{
+    "model" : {
+        "backend":              "Full Yolo",
+        "input_size_w":           416,
+        "anchors":              [0.57273, 0.677385, 1.87446, 2.06253, 3.33843, 5.47434, 7.88282, 3.52778, 9.77052, 9.16828],
+        "max_box_per_image":    5,        
+        "labels":               ["lesion"]
+    },
+    
+    "parser_annotation_type":     "xml",
+
+    "train": {
+        "train_image_folder": "/Users/kathleensullivan/PythonNYCDSA/Machine_Learning/capstone/data/train/",
+        "train_annot_folder": "/Users/kathleensullivan/PythonNYCDSA/Machine_Learning/capstone/data/train_annot/",     
+          
+        "train_times":          8,
+        "pretrained_weights":   "yolov2.h5",
+        "batch_size":           16,
+        "learning_rate":        1e-4,
+        "nb_epochs":            1,
+        "warmup_epochs":        3,
+
+        "object_scale":         5.0 ,
+        "no_object_scale":      1.0,
+        "coord_scale":          1.0,
+        "class_scale":          1.0,
+
+        "saved_weights_name":   "full_yolo_thyroid.h5",
+        "debug":                true
+    },
+
+    "valid": {
+        "valid_image_folder":   "/Users/kathleensullivan/PythonNYCDSA/Machine_Learning/capstone/data/validate/",
+        "valid_annot_folder":   "/Users/kathleensullivan/PythonNYCDSA/Machine_Learning/capstone/data/validate_annot/",
+
+        "valid_times":          1
+    }
+}
