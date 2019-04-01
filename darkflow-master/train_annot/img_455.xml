@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>img_455.png</filename>
+	<path>/Users/kathleensullivan/PythonNYCDSA/Machine_Learning/capstone/data/train/img_455.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>608</width>
+		<height>608</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>lesion</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>181</xmin>
+			<xmax>358</xmax>
+			<ymin>64</ymin>
+			<ymax>235</ymax>
+		</bndbox>
+	</object>
+</annotation>
